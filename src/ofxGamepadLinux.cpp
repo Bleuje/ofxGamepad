@@ -217,7 +217,7 @@ void ofxGamepadLinux::playFF(int i) {
 		if (write(fdEvent, (const void*) &play, sizeof(play)) == -1) {
 			ofLog(OF_LOG_ERROR,"Play effect");
 		}
-		ofLog(OF_LOG_VERBOSE,"Now Playing: "+string(effect_names[i])+"\n");
+		// ofLog(OF_LOG_VERBOSE,"Now Playing: "+string(effect_names[i])+"\n");
 	} else {
 		ofLog(OF_LOG_ERROR,"There is no such effect");
 	}

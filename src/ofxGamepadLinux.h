@@ -26,14 +26,15 @@
 
 #define N_EFFECTS 6
 
-static char* effect_names[] = {
-	"Sine vibration",
-	"Constant Force",
-	"Spring Condition",
-	"Damping Condition",
-	"Strong Rumble",
-	"Weak Rumble"
-};
+// unused:
+// static const char* effect_names[] = {
+// 	"Sine vibration",
+// 	"Constant Force",
+// 	"Spring Condition",
+// 	"Damping Condition",
+// 	"Strong Rumble",
+// 	"Weak Rumble"
+// };
 
 class ofxGamepadLinux : public ofxGamepad
 {

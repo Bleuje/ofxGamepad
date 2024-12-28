@@ -18,13 +18,13 @@
 typedef std::vector< ofPtr<ofxGamepadOIS> > gamepadList;
 #else
 typedef std::vector< ofPtr<ofxGamepad> > gamepadList;
-#endif;
+#endif
 
 
 class ofxGamepadHandler: public ofThread {
 
 public:
-	~ofxGamepadHandler();
+	virtual ~ofxGamepadHandler() = default;
 	static ofxGamepadHandler* get();
 
 	int getNumPads();

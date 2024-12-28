@@ -25,9 +25,6 @@ ofxGamepadHandler::ofxGamepadHandler():hasHotplug(false),hotplugNext(0) {
 	gamepadsNew.clear();
 }
 
-ofxGamepadHandler::~ofxGamepadHandler() {
-}
-
 ofxGamepadHandler* ofxGamepadHandler::get() {
 	if(!hasSingleton) {
 		singleton=new ofxGamepadHandler();
